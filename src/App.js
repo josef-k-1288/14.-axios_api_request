@@ -22,6 +22,19 @@ function App() {
   const [editBody, setEditBody] = useState('');
   const history = useHistory();
 
+/* 
+
+Axios je paket koji ima istu svrhu kao i Fetch API, ali 
+jednostavnije ga je koristiti i nudi
+dodatne mogucnosti poput presijecanja zahtijeva 
+(eng. ´ request interception). To je mesto
+za logovanje, autentifikaciju ..
+
+Jedna od razlika Axios-a i Fetch API-ja je ta sto kod axios-a nije 
+potrebno pretvarati response u JSON objekt. Axios to radi za nas
+
+
+*/
 
   useEffect(() => {
     const fetchPosts = async () => {
